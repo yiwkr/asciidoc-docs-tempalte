@@ -1,4 +1,4 @@
-# document sample (asciidoc)
+# asciidoc documents template
 
 ## VS Codeの設定
 
