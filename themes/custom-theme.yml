@@ -8,7 +8,7 @@ font:
 title-page:
   background-image: image:images/title.svg[]
   logo:
-    image: image:images/logo.svg[]
+    image: image:images/logo.svg[top=15%]
   page:
     numbering:
       start-at: 0

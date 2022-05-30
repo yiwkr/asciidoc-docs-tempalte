@@ -3,37 +3,57 @@ IMAGE_NAME = yiwkr/asciidoctor
 .DEFAULT_GOAL = help
 
 .PHONY: html
-html: ## build html
-	@asciidoctor \
+html: build-docker-image ## build html
+	@docker run --rm -it \
+		-v $(shell pwd):/data \
+		--workdir /data \
+		$(IMAGE_NAME) \
+		asciidoctor \
 		-a stylesheets=../styles/custom.css \
 		-r asciidoctor-diagram \
 		-D build \
 		$(INDEX_FILE_PATH)
+	@echo "html has been built successfully"
 
 .PHONY: pdf
-pdf: ## build pdf
-	@asciidoctor-pdf \
+pdf: build-docker-image ## build pdf
+	@docker run --rm -it \
+		-v $(shell pwd):/data \
+		--workdir /data \
+		$(IMAGE_NAME) \
+		asciidoctor-pdf \
 		-a scripts=cjk \
 		-a pdf-theme=custom \
 		-a pdf-themesdir=themes \
 		-r asciidoctor-diagram \
 		-D build \
 		$(INDEX_FILE_PATH)
+	@echo "pdf has been built successfully"
 
-.PHONY: build-image
-build-image: ## build docker image
-	@docker build -t $(IMAGE_NAME) .
+.PHONY: build
+build: html pdf ## build html and pdf
+
+.PHONY: build-docker-image
+build-docker-image: ## build docker image
+	@docker build -t $(IMAGE_NAME) . > /dev/null
+	@echo "docker image has been built successfully"
 
 .PHONY: run
-run: build-image ## run bash on docker container
+run: build-docker-image ## run bash on docker docker
 	@docker run --rm -it \
 		-v $(shell pwd):/data \
 		--workdir /data \
 		$(IMAGE_NAME) \
 		bash
 
-.PHONY: build
-build: html pdf ## build all
+.PHONY: serve
+serve: build-docker-image ## run http serve
+	@docker run --rm -it \
+		-v $(shell pwd):/data \
+		--workdir /data \
+		-p $${PORT:-8080}:8080 \
+		$(IMAGE_NAME) \
+		ruby -run -e httpd .
 
 .PHONY: help
 help:
