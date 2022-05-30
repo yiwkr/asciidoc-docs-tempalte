@@ -5,6 +5,7 @@ IMAGE_NAME = yiwkr/asciidoctor
 .PHONY: html
 html: ## build html
 	@asciidoctor \
+		-a stylesheets=../styles/custom.css \
 		-r asciidoctor-diagram \
 		-D build \
 		$(INDEX_FILE_PATH)
@@ -13,7 +14,8 @@ html: ## build html
 pdf: ## build pdf
 	@asciidoctor-pdf \
 		-a scripts=cjk \
-		-a pdf-theme=default-with-fallback-font \
+		-a pdf-theme=custom \
+		-a pdf-themesdir=themes \
 		-r asciidoctor-diagram \
 		-D build \
 		$(INDEX_FILE_PATH)

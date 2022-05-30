@@ -1,0 +1,14 @@
+extends: default
+font:
+  catalog:
+    merge: true
+    M+ 1p Fallback: mplus1p-regular-fallback.ttf
+    Noto Emoji: notoemoji-subset.ttf
+  fallbacks: [M+ 1p Fallback, Noto Emoji]
+title-page:
+  background-image: image:images/title.svg[]
+  logo:
+    image: image:images/logo.svg[]
+  page:
+    numbering:
+      start-at: 0

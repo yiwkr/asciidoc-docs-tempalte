@@ -5,8 +5,8 @@
 :toc-title: 目次
 :sectnums:
 :sectnumlevels: 4
-:sectlinks:
-:imagesdir: ./.images
+:sectanchors:
+:imagesdir: .images
 :icons: font
 :example-caption: 例
 :table-caption: 表
