@@ -1,3 +1,6 @@
 FROM asciidoctor/docker-asciidoctor
 
-RUN gem install webrick rghost
+RUN set -x \
+  && apk add --no-cache entr \
+  && gem install webrick rghost
+

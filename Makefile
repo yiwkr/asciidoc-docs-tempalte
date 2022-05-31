@@ -57,6 +57,10 @@ endif
 .PHONY: build
 build: html pdf ## build html and pdf
 
+.PHONY: live-build
+live-build: ## automatically build html and pdf when files are changed
+	@find docs styles themes | entr $(MAKE) build
+
 .PHONY: help
 help:
 	@grep -E '^[A-Za-z_-]*:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf  "\033[36m%-20s\033[0m %s\n", $$1, $$2}' | sort
