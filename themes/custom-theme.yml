@@ -1,4 +1,4 @@
-extends: default-with-fallback-font-theme.yml
+extends: default-with-fallback-font
 title-page:
   background-image: image:images/title.svg[]
   logo:
