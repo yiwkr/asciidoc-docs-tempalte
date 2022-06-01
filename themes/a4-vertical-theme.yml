@@ -1,6 +1,6 @@
 extends: default-with-fallback-font
 title-page:
-  background-image: image:images/title.svg[]
+  background-image: image:images/a4-vertical-title.svg[]
   logo:
     image: image:images/logo.svg[top=15%]
   page:

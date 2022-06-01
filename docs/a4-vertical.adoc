@@ -11,16 +11,17 @@
 :example-caption: 例
 :table-caption: 表
 :figure-caption: 図
-:docname: = asciidocサンプル
+:docname: = タイトル: サブタイトル
 :author: ○○株式会社 △△事業部 □□開発部 ××
 :revnumber: 0.1
-:revdate: 2022/05/07
+:revdate: 2022-05-07
 :data-uri:
 :chapter-signifier:
+:pdf-theme: a4-vertical
 
-= asciidocサンプル
+= タイトル: サブタイトル
 
-include::1001-what-asciidoc.adoc[leveloffset=1]
+include::a4-vertical/1001-what-asciidoc.adoc[leveloffset=1]
 
-include::1002-can-asciidoc.adoc[leveloffset=1]
+include::a4-vertical/1002-can-asciidoc.adoc[leveloffset=1]
 

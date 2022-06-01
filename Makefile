@@ -1,11 +1,11 @@
 
-ASCIIDOCTOR_HTML := asciidoctor -a stylesheets=../styles/custom.css -r asciidoctor-diagram
-ASCIIDOCTOR_PDF := asciidoctor-pdf -a scripts=cjk -a pdf-theme=custom -a pdf-themesdir=themes -r asciidoctor-diagram
+ASCIIDOCTOR_HTML := asciidoctor -a stylesheet=../styles/custom.css -r asciidoctor-diagram
+ASCIIDOCTOR_PDF := asciidoctor-pdf -a scripts=cjk -a pdf-themesdir=themes -r asciidoctor-diagram
 DOCKER := $(shell command -v docker)
 DOCKER_RUN := $(DOCKER) run --rm -it -v $(shell pwd):/work --workdir /work
-IMAGE_NAME := yiwkr/asciidoctor
-INDEX_FILE_PATH := docs/index.adoc
-OUTPUT_DIR := build
+IMAGE_NAME := yiwkr/docker-asciidoctor
+INPUT_DIR := docs
+OUTPUT_DIR := build/docs
 WEB_SERVER_PORT := 8080
 
 .DEFAULT_GOAL := help
@@ -21,9 +21,9 @@ html: docker-image ## build html
 	@echo -n "building html ... "
 ifneq ($(DOCKER),)
 	@$(DOCKER_RUN) $(IMAGE_NAME) \
-		$(ASCIIDOCTOR_HTML) -D $(OUTPUT_DIR) $(INDEX_FILE_PATH)
+		$(ASCIIDOCTOR_HTML) -D $(OUTPUT_DIR) $(INPUT_DIR)/*.adoc
 else
-	@$(ASCIIDOCTOR_HTML) -D $(OUTPUT_DIR) $(INDEX_FILE_PATH)
+	@$(ASCIIDOCTOR_HTML) -D $(OUTPUT_DIR) $(INPUT_DIR)/*.adoc
 endif
 	@echo "done"
 
@@ -32,9 +32,9 @@ pdf: docker-image ## build pdf
 	@echo -n "building pdf ... "
 ifneq ($(DOCKER),)
 	@$(DOCKER_RUN) $(IMAGE_NAME) \
-		$(ASCIIDOCTOR_PDF) -D $(OUTPUT_DIR) $(INDEX_FILE_PATH)
+		$(ASCIIDOCTOR_PDF) -D $(OUTPUT_DIR) $(INPUT_DIR)/*.adoc
 else
-	@$(ASCIIDOCTOR_PDF) -D $(OUTPUT_DIR) $(INDEX_FILE_PATH)
+	@$(ASCIIDOCTOR_PDF) -D $(OUTPUT_DIR) $(INPUT_DIR)/*.adoc
 endif
 	@echo "done"
 
