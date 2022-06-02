@@ -1,6 +1,6 @@
 
 ASCIIDOCTOR_HTML := asciidoctor -a stylesheet=../styles/custom.css -r asciidoctor-diagram
-ASCIIDOCTOR_PDF := asciidoctor-pdf -a scripts=cjk -a pdf-themesdir=themes -r asciidoctor-diagram
+ASCIIDOCTOR_PDF := asciidoctor-pdf -a scripts=cjk -a pdf-themesdir=themes -r asciidoctor-diagram -r ./themes/patch.rb
 DOCKER := $(shell command -v docker)
 DOCKER_RUN := $(DOCKER) run --rm -it -v $(shell pwd):/work --workdir /work
 IMAGE_NAME := yiwkr/docker-asciidoctor
@@ -9,6 +9,15 @@ OUTPUT_DIR := build/docs
 WEB_SERVER_PORT := 8080
 
 .DEFAULT_GOAL := help
+
+.PHONY: clean
+clean: ## cleanup build directory
+ifneq ($(DOCKER),)
+	@$(DOCKER_RUN) $(IMAGE_NAME) \
+		rm -rf $(OUTPUT_DIR)
+else
+	@rm -rf $(OUTPUT_DIR)
+endif
 
 .PHONY: docker-image
 docker-image: ## build docker image

@@ -1,0 +1,12 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="828px" height="1170px" viewBox="-0.5 -0.5 828 1170" content="&lt;mxfile scale=&quot;1&quot; border=&quot;0&quot; disableSvgWarning=&quot;true&quot;&gt;&lt;diagram id=&quot;KCJjQKhJ2OLE7GttOkSE&quot; name=&quot;ページ1&quot;&gt;zZTBbtswDIafxscWsd2k2bFO6/WwAQUCbMdBsRhJqCwaMlM7e/pRtZzYbYLtuFwiffxlkT9pJ/mm7r960ejvKMEm2UL2Sf6YZFm2Xi/5L5DjQNLl6m4gyhsZ2RlszW+IcBHpwUhoZ0JCtGSaOazQOahoxoT32M1le7TzWxuh4BPYVsJ+pj+NJD3QdXZ/5s9glB5vTldfhkgtRnGspNVCYjdB+VOSbzwiDau634AN7o2+DOfKK9FTYh4c/cuB6PubsIdYW8yLjmOxHg9OQtAvkrzotCHYNqIK0Y77y0xTbXmX8nJvrN2gRc97h45FhfJCGk7n0XjuhUHHIRAtp1e05PEVPuhjRuAJ+qtVpSeveMoAayB/ZEk8cHNqRXehPfpia0ScCXV62tk2XkTnLru4+ruLoR7DE/RN7MC+YGuiEzskwprLHgUP1qgQIPxgLY9KEx5W9yq8Vrc70ZrqFj1pVOiE/UXeCKfsNc9dkHJMTlgH1/uwt6Z5jl0P6x8XWpxk+V1WlOUycHQ04fv33ySXSeyhKNOyHGoaxj9c0r4CVTpu/v8p4O35PX2PTT53+dMf&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs>
+        <linearGradient x1="0%" y1="100%" x2="0%" y2="0%" id="mx-gradient-abf1ff-1-42bff5-1-s-0">
+            <stop offset="0%" style="stop-color: rgb(66, 191, 245); stop-opacity: 1;"/>
+            <stop offset="100%" style="stop-color: rgb(171, 241, 255); stop-opacity: 1;"/>
+        </linearGradient>
+    </defs>
+    <g>
+        <rect x="0" y="0" width="827" height="1169" fill="none" stroke="none" pointer-events="all"/>
+        <path d="M 0 1169 L 0 0 L 827 1169 Z" fill="url(#mx-gradient-abf1ff-1-42bff5-1-s-0)" stroke="none" transform="translate(0,584.5)scale(1,-1)translate(0,-584.5)rotate(-180,413.5,584.5)" pointer-events="all"/>
+    </g>
+</svg>

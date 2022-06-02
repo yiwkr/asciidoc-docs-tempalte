@@ -1,21 +1,17 @@
-extends: default-with-fallback-font
+extends:
+  - default-with-fallback-font
+  - extends/custom-variables
 base:
   font-size: 16
 page:
   size: [25.4cm, 14.288cm]
-  margin: [0.4cm, 1cm, 0.4cm, 1cm]
-  background-image: image:images/slide-wide-page.svg[]
-  background-color: 'FCFCFC'
+  margin: [0.35cm, 1cm, 0.35cm, 1cm]
+  background-color: $custom-color-white
 title-page:
   align: left
-  background-image: image:images/slide-wide-title.svg[]
-  #logo:
-  #  image: image:images/logo.svg[]
-  #  align: right
-  #  top: 25%
   title:
     font-size: 28
-    font-color: $base_font_color
+    font-color: $custom-color-black
     top: 40%
   subtitle:
     font-size: 20
@@ -23,7 +19,8 @@ title-page:
     font-size: 14
   revision:
     font-size: 10
-    font-color: '666666'
+    font-color: $custom-color-gray
+  background-color: $custom-color-white
 footer:
   border-width: 0
   columns: '<40% =20% >40%'

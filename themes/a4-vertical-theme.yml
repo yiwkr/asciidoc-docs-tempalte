@@ -1,8 +1,16 @@
-extends: default-with-fallback-font
+extends:
+  - default-with-fallback-font
+  - extends/custom-variables
 title-page:
-  background-image: image:images/a4-vertical-title.svg[]
+  align: left
+  background-image: image:images/a4-vertical/a4-vertical-title.svg[fit=none,pdfwidth=101%]
+  title:
+    top: 20%
+    font-color: $custom-color-black
   logo:
-    image: image:images/logo.svg[top=15%]
-  page:
-    numbering:
-      start-at: 0
+    align: right
+    top: 0%
+    image: image:images/logo/logo.svg[pdfwidth=20%]
+page:
+  numbering:
+    start-at: 0

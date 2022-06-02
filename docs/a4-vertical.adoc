@@ -11,7 +11,7 @@
 :example-caption: 例
 :table-caption: 表
 :figure-caption: 図
-:docname: = タイトル: サブタイトル
+:docname: = A4(縦)資料サンプル: サブタイトル
 :author: ○○株式会社 △△事業部 □□開発部 ××
 :revnumber: 0.1
 :revdate: 2022-05-07
@@ -19,7 +19,7 @@
 :chapter-signifier:
 :pdf-theme: a4-vertical
 
-= タイトル: サブタイトル
+= A4(縦)資料サンプル: サブタイトル
 
 include::a4-vertical/1001-what-asciidoc.adoc[leveloffset=1]
 

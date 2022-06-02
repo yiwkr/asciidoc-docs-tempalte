@@ -7,12 +7,12 @@
 :figure-caption: 図
 :docname: = AsciiDocで作るスライドのサンプル: 主にPlantUMLの例
 :author: ○○株式会社 △△事業部 □□開発部 ××
-:revnumber: 0.1
 :revdate: 2022-06-01
 :data-uri:
 :chapter-signifier:
-:version-label: Ver.
-:pdf-theme: slide-wide
+// :revnumber: 0.1
+// :version-label: Ver.
+:pdf-theme: slide-wide-dark
 
 = AsciiDocで作るスライドのサンプル: 主にPlantUMLの例
 
@@ -37,10 +37,13 @@ asciidocでスライドを作成する例です。
 
 シーケンス図の例
 
+====
 .シーケンス図
-[plantuml,format="svg",align="center",pdfwidth="60%"]
+[plantuml,format="svg",align="center",pdfwidth="55%"]
 ----
 @startuml
+hide footbox
+
 participant Participant as Foo
 actor       Actor       as Foo1
 boundary    Boundary    as Foo2
@@ -58,13 +61,15 @@ Foo -> Foo6 : To collections
 Foo -> Foo7: To queue
 @enduml
 ----
+====
 
 == PlantUML (2/2)
 
 クラス図の例
 
+====
 .クラス図
-[plantuml,format="svg",align="center",pdfwidth="60%"]
+[plantuml,format="svg",align="center",pdfwidth="55%"]
 ----
 @startuml
 
@@ -101,6 +106,7 @@ annotation Annotation {
 
 @enduml
 ----
+====
 
 == おわりに
 
