@@ -1,0 +1,13 @@
+extends:
+  - extends/default-custom-variables
+base:
+  font-color: $custom-color-black
+page:
+  background-image: image:images/slide/light/slide-light-page.svg[fit=none,pdfwidth=101%]
+title-page:
+  background-image: image:images/slide/light/slide-light-title.svg[fit=none,pdfwidth=101%]
+  title:
+    font-color: $base-font-color
+  background-color: $custom-color-white
+heading:
+  h2-font-color: $custom-color-white

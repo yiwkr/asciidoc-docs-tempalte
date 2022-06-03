@@ -1,43 +1,5 @@
 extends:
-  - default-with-fallback-font
-  - extends/custom-variables
-base:
-  font-size: 16
+  - extends/slide-base
 page:
   size: [25.4cm, 14.288cm]
   margin: [0.35cm, 1cm, 0.35cm, 1cm]
-  background-color: $custom-color-white
-title-page:
-  align: left
-  title:
-    font-size: 28
-    font-color: $custom-color-black
-    top: 40%
-  subtitle:
-    font-size: 20
-  authors:
-    font-size: 14
-  revision:
-    font-size: 10
-    font-color: $custom-color-gray
-  background-color: $custom-color-white
-footer:
-  border-width: 0
-  columns: '<40% =20% >40%'
-  recto: &footer
-    left:
-      content: ~
-    center:
-      content: '{page-number}'
-    right:
-      content: ~
-  verso: *footer
-heading:
-  h2-margin-bottom: 28
-  h2-font-size: 28
-  h3-font-size: 24
-  h4-font-size: 22
-  h5-font-size: 20
-  h6-font-size: 18
-caption:
-  align: center

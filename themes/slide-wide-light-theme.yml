@@ -1,9 +1,3 @@
 extends:
   - extends/slide-wide-base
-  - extends/custom-variables
-page:
-  background-image: image:images/slide-wide/light/slide-wide-light-page.svg[fit=none,pdfwidth=101%]
-title-page:
-  background-image: image:images/slide-wide/light/slide-wide-light-title.svg[fit=none,pdfwidth=101%]
-heading:
-  h2-font-color: $custom-color-white
+  - extends/slide-wide-light

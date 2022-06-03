@@ -7,7 +7,7 @@
 :figure-caption: 図
 :docname: = AsciiDocで作るスライドのサンプル: 主にPlantUMLの例
 :author: ○○株式会社 △△事業部 □□開発部 ××
-:revdate: 2022-06-01
+:revdate: 2022年6月1日
 :data-uri:
 :chapter-signifier:
 // :revnumber: 0.1
@@ -16,99 +16,4 @@
 
 = AsciiDocで作るスライドのサンプル: 主にPlantUMLの例
 
-== 変更履歴
-
-[width="100%",options="header,autowidth"]
-|===
-|バージョン|変更箇所|変更内容|変更実施者|変更日
-
-|0.1
-|全体
-|初版
-|××
-|20xx年yy月zz日
-|===
-
-== はじめに
-
-asciidocでスライドを作成する例です。
-
-== PlantUML (1/2)
-
-シーケンス図の例
-
-====
-.シーケンス図
-[plantuml,format="svg",align="center",pdfwidth="55%"]
-----
-@startuml
-hide footbox
-
-participant Participant as Foo
-actor       Actor       as Foo1
-boundary    Boundary    as Foo2
-control     Control     as Foo3
-entity      Entity      as Foo4
-database    Database    as Foo5
-collections Collections as Foo6
-queue       Queue       as Foo7
-Foo -> Foo1 : To actor
-Foo -> Foo2 : To boundary
-Foo -> Foo3 : To control
-Foo -> Foo4 : To entity
-Foo -> Foo5 : To database
-Foo -> Foo6 : To collections
-Foo -> Foo7: To queue
-@enduml
-----
-====
-
-== PlantUML (2/2)
-
-クラス図の例
-
-====
-.クラス図
-[plantuml,format="svg",align="center",pdfwidth="55%"]
-----
-@startuml
-
-abstract class AbstractList
-abstract AbstractCollection
-interface List
-interface Collection
-
-List <|-- AbstractList
-Collection <|-- AbstractCollection
-
-Collection <|- List
-AbstractCollection <|- AbstractList
-AbstractList <|-- ArrayList
-
-class ArrayList {
-  Object[] elementData
-  size()
-}
-
-enum TimeUnit {
-  DAYS
-  HOURS
-  MINUTES
-}
-
-annotation SuppressWarnings
-
-annotation Annotation {
-  annotation with members
-  String foo()
-  String bar()
-}
-
-@enduml
-----
-====
-
-== おわりに
-
-asciidocでスライドを作成してみました。
-
+include::slide/slide-content.adoc[]

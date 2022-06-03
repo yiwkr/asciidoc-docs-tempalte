@@ -1,6 +1,6 @@
 extends:
   - default-with-fallback-font
-  - extends/custom-variables
+  - extends/default-custom-variables
 title-page:
   align: left
   background-image: image:images/a4-vertical/a4-vertical-title.svg[fit=none,pdfwidth=101%]

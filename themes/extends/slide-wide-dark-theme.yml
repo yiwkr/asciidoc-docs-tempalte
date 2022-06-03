@@ -1,0 +1,6 @@
+extends:
+  - extends/slide-dark
+page:
+  background-image: image:images/slide-wide/dark/slide-wide-dark-page.svg[fit=none,pdfwidth=101%]
+title-page:
+  background-image: image:images/slide-wide/dark/slide-wide-dark-title.svg[fit=none,pdfwidth=101%]

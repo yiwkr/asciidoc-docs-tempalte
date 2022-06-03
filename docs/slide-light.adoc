@@ -12,7 +12,7 @@
 :chapter-signifier:
 // :revnumber: 0.1
 // :version-label: Ver.
-:pdf-theme: slide-wide-light
+:pdf-theme: slide-light
 
 = AsciiDocで作るスライドのサンプル: 主にPlantUMLの例
 

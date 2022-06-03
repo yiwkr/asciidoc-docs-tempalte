@@ -1,0 +1,26 @@
+extends:
+  - extends/default-custom-variables
+base:
+  font-color: $custom-color-white
+page:
+  background-image: image:images/slide/dark/slide-dark-page.svg[fit=none,pdfwidth=101%]
+title-page:
+  background-image: image:images/slide/dark/slide-dark-title.svg[fit=none,pdfwidth=101%]
+  title:
+    font-color: $base-font-color
+  authors: 
+    font-color: $base-font-color
+  revision:
+    font-color: $base-font-color
+heading:
+  h2-font-color: $base-font-color
+caption:
+  font-color: $base-font-color
+table:
+  background-color: transparent
+  border-color: $base-font-color
+  font-color: $base-font-color
+  caption:
+    font-color: $base-font-color
+caption:
+  font-color: $custom-color-black
