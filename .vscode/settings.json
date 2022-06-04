@@ -1,0 +1,6 @@
+{
+    "asciidoc.asciidoctorpdf_command": "asciidoctor-pdf -a scripts=cjk -a imagesdir=.images -r asciidoctor-diagram -D build",
+    "asciidoc.asciidoctor_command": "asciidoctor -a imagesdir=.images -r asciidoctor-diagram -D build",
+    "asciidoc.use_asciidoctorpdf": true,
+    "asciidoc.use_asciidoctor_js": false
+}
