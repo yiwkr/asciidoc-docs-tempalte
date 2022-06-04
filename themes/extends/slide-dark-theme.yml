@@ -14,6 +14,10 @@ title-page:
     font-color: $base-font-color
 heading:
   h2-font-color: $base-font-color
+  h3-font-color: $base-font-color
+  h4-font-color: $base-font-color
+  h5-font-color: $base-font-color
+  h6-font-color: $base-font-color
 caption:
   font-color: $base-font-color
 table:

@@ -13,157 +13,161 @@
 
 == はじめに
 
-asciidocでスライドを作成する例です。
+本スライドはAsciiDocで作成したサンプルです。 +
+主にPlantUMLの図の例を載せています。
+
+PlantUMLとは::
+PlantUMLはUMLなどの図をテキストで記述できるツールです。 +
+下記の公式サイト(日本語)にサンプルが豊富に掲載されているので参考になります。 +
+https://plantuml.com/ja/ +
+このスライドでも上記サイトのサンプルを一部変更したものを使用しています。
 
 == シーケンス図
 
+[cols="<,<",frame=none,grid=none]
+|===
+
+a|
 ====
 .シーケンス図
-[plantuml,format=svg,align=center,pdfwidth=55%]
+[plantuml,format=svg,align=center]
 ----
-@startuml
-hide footbox
-
-participant Participant as Foo
-actor       Actor       as Foo1
-boundary    Boundary    as Foo2
-control     Control     as Foo3
-entity      Entity      as Foo4
-database    Database    as Foo5
-collections Collections as Foo6
-queue       Queue       as Foo7
-Foo -> Foo1 : To actor
-Foo -> Foo2 : To boundary
-Foo -> Foo3 : To control
-Foo -> Foo4 : To entity
-Foo -> Foo5 : To database
-Foo -> Foo6 : To collections
-Foo -> Foo7: To queue
-@enduml
+include::plantuml-sequence-diagram.pu[]
 ----
 ====
+
+a|
+[source,plantuml]
+----
+include::plantuml-sequence-diagram.pu[]
+----
+|===
 
 == クラス図
 
+[cols="<,<",frame=none,grid=none]
+|===
+
+a|
 ====
 .クラス図
-[plantuml,format=svg,align=center,pdfwidth=55%]
+[plantuml,format=svg,align=center]
 ----
-@startuml
-
-abstract class AbstractList
-abstract AbstractCollection
-interface List
-interface Collection
-
-List <|-- AbstractList
-Collection <|-- AbstractCollection
-
-Collection <|- List
-AbstractCollection <|- AbstractList
-AbstractList <|-- ArrayList
-
-class ArrayList {
-  Object[] elementData
-  size()
-}
-
-enum TimeUnit {
-  DAYS
-  HOURS
-  MINUTES
-}
-
-annotation SuppressWarnings
-
-annotation Annotation {
-  annotation with members
-  String foo()
-  String bar()
-}
-
-@enduml
+include::plantuml-class-diagram.pu[]
 ----
 ====
+
+a|
+[source,plantuml]
+----
+include::plantuml-class-diagram.pu[]
+----
+|===
 
 == アクティビティ図
 
+[cols="<,<",frame=none,grid=none]
+|===
+
+a|
 ====
 .アクティビティ図
 [plantuml,format=svg,align=center]
 ----
-@startuml
-start
-if (condition A) then (yes)
-  :Text 1;
-elseif (condition B) then (yes)
-  :Text 2;
-  stop
-(no) elseif (condition C) then (yes)
-  :Text 3;
-(no) elseif (condition D) then (yes)
-  :Text 4;
-else (nothing)
-  :Text else;
-endif
-stop
-@enduml
+include::plantuml-activity-diagram.pu[]
 ----
 ====
 
-== WBSで書く組織図
-
-====
-.組織図
-[plantuml,format=svg,align=center]
+a|
+[source,plantuml]
 ----
-@startwbs
+include::plantuml-activity-diagram.pu[]
+----
+|===
 
-* 事業部
-** 一開発部
-*** プロジェクト1-A
-*** プロジェクト1-B
-** 二開発部
-*** プロジェクト2-A
-*** プロジェクト2-B
-** 三開発部
-*** プロジェクト3-A
-*** プロジェクト3-B
-** 四開発部
-*** プロジェクト4-A
-*** プロジェクト4-B
+== JSONデータ
 
-@endwbs
+[cols="<,<",frame=none,grid=none]
+|===
+
+a|
+====
+.JSONデータ
+[plantuml,format=svg,align=center,pdfwidth=85%]
+----
+include::plantuml-json.pu[]
 ----
 ====
+
+a|
+[source,plantuml]
+----
+include::plantuml-json.pu[]
+----
+|===
+
+== YAMLデータ
+
+[cols="<,<",frame=none,grid=none]
+|===
+
+a|
+====
+.YAMLデータ
+[plantuml,format=svg,align=center,pdfwidth=85%]
+----
+include::plantuml-yaml.pu[]
+----
+====
+
+a|
+[source,plantuml]
+----
+include::plantuml-yaml.pu[]
+----
+|===
 
 == ガントチャート
 
+[cols="<,<",frame=none,grid=none]
+|===
+
+a|
 ====
 .ガントチャート
-[plantuml,format=svg,align=center]
+[plantuml,format=svg,align=center,pdfwidth=80%]
 ----
-@startgantt
-
-hide footbox
-printscale daily zoom 2
-saturday are closed
-sunday are closed
-
-Project starts 2022-06-01
-[タスクA] starts 2022-06-01 and ends 2022-06-07
-[タスクB] starts 2022-06-08 and ends 2022-06-14
-[タスクC] starts 2022-06-15 and ends 2022-06-22
-[タスクD] starts 2022-06-23 and ends 2022-06-30
-
-[タスクE] starts 2022-06-01 and ends 2022-06-07
-[タスクF] starts 2022-06-08 and ends 2022-06-14
-[タスクG] starts 2022-06-15 and ends 2022-06-22
-[タスクH] starts 2022-06-23 and ends 2022-06-30
-
-@endwbsgantt
+include::plantuml-gantt-diagram.pu[]
 ----
 ====
+
+a|
+[source,plantuml]
+----
+include::plantuml-gantt-diagram.pu[]
+----
+|===
+
+== WBSで書く組織図
+
+[cols="<,<",frame=none,grid=none]
+|===
+
+a|
+====
+.組織図
+[plantuml,format=svg,align=center,pdfwidth=80%]
+----
+include::plantuml-wbs-diagram.pu[]
+----
+====
+
+a|
+[source,plantuml]
+----
+include::plantuml-wbs-diagram.pu[]
+----
+|===
 
 == おわりに
 

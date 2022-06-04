@@ -1,0 +1,14 @@
+@startgantt
+hide footbox
+printscale daily zoom 2
+saturday are closed
+sunday are closed
+
+Project starts 2022-06-01
+[タスクA] starts 2022-06-01 and ends 2022-06-03
+[タスクB] starts 2022-06-06 and ends 2022-06-07
+[タスクC] starts 2022-06-08 and ends 2022-06-08
+[タスクD] starts 2022-06-09 and ends 2022-06-09
+[タスクE] starts 2022-06-10 and ends 2022-06-13
+[タスクF] starts 2022-06-14 and ends 2022-06-14
+@endwbsgantt

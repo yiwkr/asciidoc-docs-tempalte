@@ -5,7 +5,7 @@
 :example-caption: 例
 :table-caption: 表
 :figure-caption: 図
-:docname: = AsciiDocで作るスライドのサンプル: 主にPlantUMLの例
+:docname: = AsciiDocで作成したスライドのサンプル
 :author: ○○株式会社 △△事業部 □□開発部 ××
 :revdate: 2022年6月1日
 :data-uri:
@@ -14,6 +14,6 @@
 // :version-label: Ver.
 :pdf-theme: slide-light
 
-= AsciiDocで作るスライドのサンプル: 主にPlantUMLの例
+= AsciiDocで作成したスライドのサンプル
 
 include::slide/slide-content.adoc[]
