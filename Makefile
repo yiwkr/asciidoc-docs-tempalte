@@ -6,6 +6,7 @@ DOCKER_RUN := $(DOCKER) run --rm -it -v $(shell pwd):/work --workdir /work
 IMAGE_NAME := yiwkr/docker-asciidoctor
 INPUT_DIR := docs
 OUTPUT_DIR := build/docs
+CLEAN_COMMAND := sh -c "rm -rf $(OUTPUT_DIR); find $(INPUT_DIR) -name \"*.svg\" -o -name \"*.png\" -o -name \".asciidoctor\" -o -name \".images\" | xargs rm -rv"
 WEB_SERVER_PORT := 8080
 
 .DEFAULT_GOAL := help
@@ -14,9 +15,10 @@ WEB_SERVER_PORT := 8080
 clean: ## cleanup build directory
 ifneq ($(DOCKER),)
 	@$(DOCKER_RUN) $(IMAGE_NAME) \
-		rm -rf $(OUTPUT_DIR)
+		$(CLEAN_COMMAND)
+
 else
-	@rm -rf $(OUTPUT_DIR)
+	@$(CLEAN_COMMAND)
 endif
 
 .PHONY: docker-image
