@@ -6,16 +6,16 @@ DOCKER_RUN := $(DOCKER) run --rm -it -v $(shell pwd):/work --workdir /work
 IMAGE_NAME := yiwkr/docker-asciidoctor
 INPUT_DIR := docs
 OUTPUT_DIR := build/docs
-CLEAN_COMMAND := sh -c "rm -rf $(OUTPUT_DIR); find $(INPUT_DIR) -name \"*.svg\" -o -name \"*.png\" -o -name \".asciidoctor\" -o -name \".images\" | xargs rm -rv"
+CLEAN_COMMAND := sh -c "git clean -xdf"
 WEB_SERVER_PORT := 8080
+WEB_SERVER_COMMAND := ruby -run -e httpd -- --port=$(WEB_SERVER_PORT) $(OUTPUT_DIR)
 
 .DEFAULT_GOAL := help
 
 .PHONY: clean
 clean: ## cleanup build directory
 ifneq ($(DOCKER),)
-	@$(DOCKER_RUN) $(IMAGE_NAME) \
-		$(CLEAN_COMMAND)
+	@$(DOCKER_RUN) $(IMAGE_NAME) $(CLEAN_COMMAND)
 
 else
 	@$(CLEAN_COMMAND)
@@ -31,8 +31,7 @@ endif
 html: docker-image ## build html
 	@echo -n "building html ... "
 ifneq ($(DOCKER),)
-	@$(DOCKER_RUN) $(IMAGE_NAME) \
-		$(ASCIIDOCTOR_HTML) -D $(OUTPUT_DIR) $(INPUT_DIR)/*.adoc
+	@$(DOCKER_RUN) $(IMAGE_NAME) $(ASCIIDOCTOR_HTML) -D $(OUTPUT_DIR) $(INPUT_DIR)/*.adoc
 else
 	@$(ASCIIDOCTOR_HTML) -D $(OUTPUT_DIR) $(INPUT_DIR)/*.adoc
 endif
@@ -42,8 +41,7 @@ endif
 pdf: docker-image ## build pdf
 	@echo -n "building pdf ... "
 ifneq ($(DOCKER),)
-	@$(DOCKER_RUN) $(IMAGE_NAME) \
-		$(ASCIIDOCTOR_PDF) -D $(OUTPUT_DIR) $(INPUT_DIR)/*.adoc
+	@$(DOCKER_RUN) $(IMAGE_NAME) $(ASCIIDOCTOR_PDF) -D $(OUTPUT_DIR) $(INPUT_DIR)/*.adoc
 else
 	@$(ASCIIDOCTOR_PDF) -D $(OUTPUT_DIR) $(INPUT_DIR)/*.adoc
 endif
@@ -57,12 +55,11 @@ bash: docker-image ## run bash on docker container
 endif
 
 .PHONY: serve
-serve: docker-image ## run http serve
+serve: docker-image ## run http server
 ifneq ($(DOCKER),)
-	@$(DOCKER_RUN) -p $(WEB_SERVER_PORT):8080 $(IMAGE_NAME) \
-		ruby -run -e httpd -- $(OUTPUT_DIR)
+	@$(DOCKER_RUN) -p $(WEB_SERVER_PORT):$(WEB_SERVER_PORT) $(IMAGE_NAME) $(WEB_SERVER_COMMAND)
 else
-	@ruby -run -e httpd -- --port=$(WEB_SERVER_PORT) $(OUTPUT_DIR)
+	@$(WEB_SERVER_COMMAND)
 endif
 
 .PHONY: build
