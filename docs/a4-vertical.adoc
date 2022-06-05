@@ -21,7 +21,21 @@
 
 = A4(縦)資料サンプル: サブタイトル
 
-include::a4-vertical/1001-what-asciidoc.adoc[leveloffset=1]
+== 変更履歴
 
-include::a4-vertical/1002-can-asciidoc.adoc[leveloffset=1]
+.変更履歴
+[width="100%",options="header,autowidth"]
+|===
+|バージョン|変更箇所|変更内容|変更実施者|変更日
+
+|0.1
+|全体
+|初版
+|××
+|20xx年yy月zz日
+|===
+
+include::a4-vertical/1001-what-asciidoc.adoc[]
+
+include::a4-vertical/1002-plantuml-sample.adoc[]
 

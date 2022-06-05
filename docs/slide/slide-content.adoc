@@ -32,14 +32,14 @@ a|
 .シーケンス図
 [plantuml,format=svg,align=center]
 ----
-include::plantuml-sequence-diagram.pu[]
+include::../plantuml/plantuml-sequence-diagram.pu[]
 ----
 ====
 
 a|
 [source,plantuml]
 ----
-include::plantuml-sequence-diagram.pu[]
+include::../plantuml/plantuml-sequence-diagram.pu[]
 ----
 |===
 
@@ -74,14 +74,35 @@ a|
 .アクティビティ図
 [plantuml,format=svg,align=center]
 ----
-include::plantuml-activity-diagram.pu[]
+include::../plantuml/plantuml-activity-diagram.pu[]
 ----
 ====
 
 a|
 [source,plantuml]
 ----
-include::plantuml-activity-diagram.pu[]
+include::../plantuml/plantuml-activity-diagram.pu[]
+----
+|===
+
+== 状態遷移図
+
+[cols="<,<",frame=none,grid=none]
+|===
+
+a|
+====
+.状態遷移図 
+[plantuml,format=svg,align=center,pdfwidth=80%]
+----
+include::../plantuml/plantuml-state-diagram.pu[]
+----
+====
+
+a|
+[source,plantuml]
+----
+include::../plantuml/plantuml-state-diagram.pu[]
 ----
 |===
 
@@ -95,14 +116,14 @@ a|
 .JSONデータ
 [plantuml,format=svg,align=center,pdfwidth=85%]
 ----
-include::plantuml-json.pu[]
+include::../plantuml/plantuml-json.pu[]
 ----
 ====
 
 a|
 [source,plantuml]
 ----
-include::plantuml-json.pu[]
+include::../plantuml/plantuml-json.pu[]
 ----
 |===
 
@@ -116,14 +137,14 @@ a|
 .YAMLデータ
 [plantuml,format=svg,align=center,pdfwidth=85%]
 ----
-include::plantuml-yaml.pu[]
+include::../plantuml/plantuml-yaml.pu[]
 ----
 ====
 
 a|
 [source,plantuml]
 ----
-include::plantuml-yaml.pu[]
+include::../plantuml/plantuml-yaml.pu[]
 ----
 |===
 
@@ -137,14 +158,14 @@ a|
 .ガントチャート
 [plantuml,format=svg,align=center,pdfwidth=80%]
 ----
-include::plantuml-gantt-diagram.pu[]
+include::../plantuml/plantuml-gantt-diagram.pu[]
 ----
 ====
 
 a|
 [source,plantuml]
 ----
-include::plantuml-gantt-diagram.pu[]
+include::../plantuml/plantuml-gantt-diagram.pu[]
 ----
 |===
 
@@ -158,14 +179,14 @@ a|
 .組織図
 [plantuml,format=svg,align=center,pdfwidth=80%]
 ----
-include::plantuml-wbs-diagram.pu[]
+include::../plantuml/plantuml-wbs-diagram.pu[]
 ----
 ====
 
 a|
 [source,plantuml]
 ----
-include::plantuml-wbs-diagram.pu[]
+include::../plantuml/plantuml-wbs-diagram.pu[]
 ----
 |===
 

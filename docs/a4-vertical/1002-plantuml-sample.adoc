@@ -1,0 +1,105 @@
+== PlantUMLサンプル
+
+=== シーケンス図
+
+.シーケンス図
+[plantuml,format=svg,align=center]
+----
+include::../plantuml/plantuml-sequence-diagram.pu[]
+----
+
+[source,plantuml]
+----
+include::../plantuml/plantuml-sequence-diagram.pu[]
+----
+
+=== クラス図
+
+.クラス図
+[plantuml,format=svg,align=center]
+----
+include::../plantuml/plantuml-class-diagram.pu[]
+----
+
+[source,plantuml]
+----
+include::../plantuml/plantuml-class-diagram.pu[]
+----
+
+=== アクティビティ図
+
+.アクティビティ図
+[plantuml,format=svg,align=center]
+----
+include::../plantuml/plantuml-activity-diagram.pu[]
+----
+
+[source,plantuml]
+----
+include::../plantuml/plantuml-activity-diagram.pu[]
+----
+
+=== 状態遷移図
+
+.状態遷移図 
+[plantuml,format=svg,align=center,pdfwidth=80%]
+----
+include::../plantuml/plantuml-state-diagram.pu[]
+----
+
+[source,plantuml]
+----
+include::../plantuml/plantuml-state-diagram.pu[]
+----
+
+=== JSONデータ
+
+.JSONデータ
+[plantuml,format=svg,align=center,pdfwidth=85%]
+----
+include::../plantuml/plantuml-json.pu[]
+----
+
+[source,plantuml]
+----
+include::../plantuml/plantuml-json.pu[]
+----
+
+=== YAMLデータ
+
+.YAMLデータ
+[plantuml,format=svg,align=center,pdfwidth=85%]
+----
+include::../plantuml/plantuml-yaml.pu[]
+----
+
+[source,plantuml]
+----
+include::../plantuml/plantuml-yaml.pu[]
+----
+
+=== ガントチャート
+
+.ガントチャート
+[plantuml,format=svg,align=center,pdfwidth=80%]
+----
+include::../plantuml/plantuml-gantt-diagram.pu[]
+----
+
+[source,plantuml]
+----
+include::../plantuml/plantuml-gantt-diagram.pu[]
+----
+
+=== WBSで書く組織図
+
+.組織図
+[plantuml,format=svg,align=center,pdfwidth=80%]
+----
+include::../plantuml/plantuml-wbs-diagram.pu[]
+----
+
+[source,plantuml]
+----
+include::../plantuml/plantuml-wbs-diagram.pu[]
+----

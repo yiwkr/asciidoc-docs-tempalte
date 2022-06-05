@@ -14,3 +14,9 @@ title-page:
 page:
   numbering:
     start-at: 0
+image:
+  align: center
+table:
+  align: center
+caption:
+  align: center
