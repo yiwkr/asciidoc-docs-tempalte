@@ -43,6 +43,27 @@ include::../plantuml/plantuml-sequence-diagram.pu[]
 ----
 |===
 
+== ユースケース図
+
+[cols="<,<",frame=none,grid=none]
+|===
+
+a|
+====
+.ユースケース図
+[plantuml,format=svg,align=center]
+----
+include::../plantuml/plantuml-use-case-diagram.pu[]
+----
+====
+
+a|
+[source,plantuml]
+----
+include::../plantuml/plantuml-use-case-diagram.pu[]
+----
+|===
+
 == クラス図
 
 [cols="<,<",frame=none,grid=none]
@@ -61,6 +82,27 @@ a|
 [source,plantuml]
 ----
 include::plantuml-class-diagram.pu[]
+----
+|===
+
+== オブジェクト図
+
+[cols="<,<",frame=none,grid=none]
+|===
+
+a|
+====
+.オブジェクト図
+[plantuml,format=svg,align=center,pdfwidth=55%]
+----
+include::../plantuml/plantuml-object-diagram.pu[]
+----
+====
+
+a|
+[source,plantuml]
+----
+include::../plantuml/plantuml-object-diagram.pu[]
 ----
 |===
 
@@ -85,6 +127,48 @@ include::../plantuml/plantuml-activity-diagram.pu[]
 ----
 |===
 
+== コンポーネント図
+
+[cols="<,<",frame=none,grid=none]
+|===
+
+a|
+====
+.コンポーネント図
+[plantuml,format=svg,align=center,pdfwidth=80%]
+----
+include::../plantuml/plantuml-component-diagram.pu[]
+----
+====
+
+a|
+[source,plantuml]
+----
+include::../plantuml/plantuml-component-diagram.pu[]
+----
+|===
+
+== 配置図
+
+[cols="<,<",frame=none,grid=none]
+|===
+
+a|
+====
+.配置図
+[plantuml,format=svg,align=center,pdfwidth=80%]
+----
+include::../plantuml/plantuml-deployment-diagram.pu[]
+----
+====
+
+a|
+[source,plantuml]
+----
+include::../plantuml/plantuml-deployment-diagram.pu[]
+----
+|===
+
 == 状態遷移図
 
 [cols="<,<",frame=none,grid=none]
@@ -103,6 +187,27 @@ a|
 [source,plantuml]
 ----
 include::../plantuml/plantuml-state-diagram.pu[]
+----
+|===
+
+== タイミング図
+
+[cols="<,<",frame=none,grid=none]
+|===
+
+a|
+====
+.タイミング図 
+[plantuml,format=svg,align=center,pdfwidth=80%]
+----
+include::../plantuml/plantuml-timing-diagram.pu[]
+----
+====
+
+a|
+[source,plantuml]
+----
+include::../plantuml/plantuml-timing-diagram.pu[]
 ----
 |===
 
@@ -145,6 +250,27 @@ a|
 [source,plantuml]
 ----
 include::../plantuml/plantuml-yaml.pu[]
+----
+|===
+
+== SALTで書くディレクトリツリー
+
+[cols="<,<",frame=none,grid=none]
+|===
+
+a|
+====
+.SALTで書く作るディレクトリツリー
+[plantuml,format=svg,align=center,pdfwidth=85%]
+----
+include::../plantuml/plantuml-salt.pu[]
+----
+====
+
+a|
+[source,plantuml]
+----
+include::../plantuml/plantuml-salt.pu[]
 ----
 |===
 

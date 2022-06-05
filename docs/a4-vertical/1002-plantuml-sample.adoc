@@ -13,6 +13,23 @@ include::../plantuml/plantuml-sequence-diagram.pu[]
 include::../plantuml/plantuml-sequence-diagram.pu[]
 ----
 
+<<<
+
+=== ユースケース図
+
+.ユースケース図
+[plantuml,format=svg,align=center]
+----
+include::../plantuml/plantuml-use-case-diagram.pu[]
+----
+
+[source,plantuml]
+----
+include::../plantuml/plantuml-use-case-diagram.pu[]
+----
+
+<<<
+
 === クラス図
 
 .クラス図
@@ -25,6 +42,23 @@ include::../plantuml/plantuml-class-diagram.pu[]
 ----
 include::../plantuml/plantuml-class-diagram.pu[]
 ----
+
+<<<
+
+=== オブジェクト図
+
+.オブジェクト図
+[plantuml,format=svg,align=center]
+----
+include::../plantuml/plantuml-object-diagram.pu[]
+----
+
+[source,plantuml]
+----
+include::../plantuml/plantuml-object-diagram.pu[]
+----
+
+<<<
 
 === アクティビティ図
 
@@ -39,6 +73,38 @@ include::../plantuml/plantuml-activity-diagram.pu[]
 include::../plantuml/plantuml-activity-diagram.pu[]
 ----
 
+<<<
+
+=== コンポーネント図
+
+.コンポーネント図
+[plantuml,format=svg,align=center]
+----
+include::../plantuml/plantuml-component-diagram.pu[]
+----
+
+[source,plantuml]
+----
+include::../plantuml/plantuml-component-diagram.pu[]
+----
+
+<<<
+
+=== 配置図
+
+.配置図
+[plantuml,format=svg,align=center]
+----
+include::../plantuml/plantuml-deployment-diagram.pu[]
+----
+
+[source,plantuml]
+----
+include::../plantuml/plantuml-deployment-diagram.pu[]
+----
+
+<<<
+
 === 状態遷移図
 
 .状態遷移図 
@@ -51,6 +117,23 @@ include::../plantuml/plantuml-state-diagram.pu[]
 ----
 include::../plantuml/plantuml-state-diagram.pu[]
 ----
+
+<<<
+
+=== タイミング図
+
+.タイミング図 
+[plantuml,format=svg,align=center,pdfwidth=80%]
+----
+include::../plantuml/plantuml-timing-diagram.pu[]
+----
+
+[source,plantuml]
+----
+include::../plantuml/plantuml-timing-diagram.pu[]
+----
+
+<<<
 
 === JSONデータ
 
@@ -65,6 +148,8 @@ include::../plantuml/plantuml-json.pu[]
 include::../plantuml/plantuml-json.pu[]
 ----
 
+<<<
+
 === YAMLデータ
 
 .YAMLデータ
@@ -77,6 +162,23 @@ include::../plantuml/plantuml-yaml.pu[]
 ----
 include::../plantuml/plantuml-yaml.pu[]
 ----
+
+<<<
+
+=== SALTで書くディレクトリツリー
+
+.SALTで書くディレクトリツリー
+[plantuml,format=svg,align=center,pdfwidth=85%]
+----
+include::../plantuml/plantuml-salt.pu[]
+----
+
+[source,plantuml]
+----
+include::../plantuml/plantuml-salt.pu[]
+----
+
+<<<
 
 === ガントチャート
 
@@ -91,6 +193,8 @@ include::../plantuml/plantuml-gantt-diagram.pu[]
 include::../plantuml/plantuml-gantt-diagram.pu[]
 ----
 
+<<<
+
 === WBSで書く組織図
 
 .組織図
@@ -103,3 +207,5 @@ include::../plantuml/plantuml-wbs-diagram.pu[]
 ----
 include::../plantuml/plantuml-wbs-diagram.pu[]
 ----
+
+<<<

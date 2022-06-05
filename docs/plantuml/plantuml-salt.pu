@@ -1,0 +1,18 @@
+@startsalt
+{{T
++ asciidoc-docs-template/
+++ docs/
++++ plantuml/
+++++ <&file>plantuml-class-diagram.pu
++++ slide/
+++++ <&file>slide-content.adoc
++++ <&file>slide-wide-light.adoc
+++ styles/
++++ <&file>custom.css
+++ themes/
++++ extends/
+++++ <&file>slide-wide-base-theme.yml
+++++ <&file>slide-wide-dark-theme.yml
++++ <&file>slide-wide-dark-theme.yml
+}}
+@endsalt
