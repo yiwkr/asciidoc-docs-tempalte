@@ -6,7 +6,7 @@ DOCKER_RUN := $(DOCKER) run --rm -it -v $(shell pwd):/work --workdir /work
 IMAGE_NAME := yiwkr/docker-asciidoctor
 INPUT_DIR := docs
 OUTPUT_DIR := build/docs
-CLEAN_COMMAND := sh -c "find . -type d -name build -o name .asciidoctor -o -name .images | xargs rm -rf"
+CLEAN_COMMAND := sh -c "find . -type d -name build -o -name .asciidoctor -o -name .images | xargs rm -rf"
 WEB_SERVER_PORT := 8080
 WEB_SERVER_COMMAND := ruby -run -e httpd -- --port=$(WEB_SERVER_PORT) $(OUTPUT_DIR)
 
