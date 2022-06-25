@@ -1,7 +1,12 @@
-<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1602px" height="902px" viewBox="-0.5 -0.5 1602 902" content="&lt;mxfile scale=&quot;1&quot; border=&quot;0&quot; disableSvgWarning=&quot;true&quot;&gt;&lt;diagram id=&quot;tWG9R_EtujmmMo1sLB8s&quot; name=&quot;ページ1&quot;&gt;zZOxcoMwDIafxruDueS6hqbp0ilDZx8W2FdjcY4SoE9fE0yAht516FAWpE+/sPwbM5FV7dHLWr+hAssSrlomnlmSbNIdD6+edAPZpdsBlN6oKJrAyXxChLGvvBgF54WQEC2ZeglzdA5yWjDpPTZLWYF2uWotS3gAp1zaR/puFOlIt5xPhVcwpY5LP42FSo7iCM5aKmxmSByYyDwiDVHVZmB780Zfhr6XH6r3wTw4+k1DOjRcpb3EvcW5qBs36/HiFPR6zsS+0YbgVMu8rzbheAPTVNmQbUJYGGsztOhD7tAF0f5MHj/gG3ycM45+BU/QzlCc+whYAfkuSJo1y/Wa3TKec3lvnqwIQXRj3Znkj51ZtWFuF0sE55uM998q0NGMF7fnP9oW0ulnvdVmV14cvgA=&lt;/diagram&gt;&lt;/mxfile&gt;">
-    <defs/>
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1601px" height="901px" viewBox="-0.5 -0.5 1601 901" content="&lt;mxfile scale=&quot;1&quot; border=&quot;0&quot; disableSvgWarning=&quot;true&quot;&gt;&lt;diagram id=&quot;tWG9R_EtujmmMo1sLB8s&quot; name=&quot;ページ1&quot;&gt;rZRBc4MgEIV/jXcibSY5NiZNLz3l0DMjqzBF1kESTX99USGG0U47bb0I39s3sA80oVnVHQ2rxStyUElKeJfQfZKmq+164149uXpCtuuRlEZyzyZwkh8QCj09Sw5NVGgRlZV1DHPUGnIbMWYMtnFZgSpetWYlzMApZ2pO3yS3wtM1IZPwArIUfultECoWij1oBOPY3iF6SGhmEO04qroMVJ9eyGX0PX+h3jZmQNufGB5Gw4Wps+/N78teQ7MGz5pDX08SumuFtHCqWd6rrTtfx4StlJut3LCQSmWo0AxeSsjThvS2xhp8h6Bo1M6+Kw3j0m00MqyywRC0vTTuBCVqpwNrXFO7eY++7QsYC90d8j0fASuw5upK2qXjEktHxfwdKW/mKUY38Ekup5r+c6qL6c2i9skVGCVaDM8fY/MfahrC+TbGx1/E6KbTxR+0u/8HPXwC&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="0%" id="mx-gradient-00a800-1-001c00-1-e-0">
+            <stop offset="0%" style="stop-color: rgb(0, 168, 0); stop-opacity: 1;"/>
+            <stop offset="100%" style="stop-color: rgb(0, 28, 0); stop-opacity: 1;"/>
+        </linearGradient>
+    </defs>
     <g>
-        <rect x="0" y="0" width="1600" height="900" fill="none" stroke="none" pointer-events="all"/>
-        <rect x="0" y="0" width="1600" height="900" fill="#001c00" stroke="none" pointer-events="all"/>
+        <rect x="0" y="0" width="1600" height="900" fill="url(#mx-gradient-00a800-1-001c00-1-e-0)" stroke="none" pointer-events="all"/>
+        <rect x="0" y="200" width="1600" height="500" fill="#001c00" stroke="none" pointer-events="all"/>
     </g>
 </svg>
